@@ -26,10 +26,12 @@ export const AboutMe = () => {
                             <a href="#content" className="cosmic-button">
                                 {" "}
                                 Get In Touch
-                            </a>
+                            </a>                                
                             <a 
-                                href=""
-                                className="px-6 py-2 rounded-full border-primary hover:bg-primary/10 transition-colors duration-300">
+                                href="/projects/CV.pdf"
+                                download="Jihad-Alibrahim-CV.pdf"
+                                className="px-6 py-2 rounded-full border-primary bg-primary/50 hover:bg-primary text-white transition-colors duration-300"
+                            >
                                 Download CV
                             </a>
                         </div>
