@@ -65,10 +65,10 @@ export const ContactSection = () => {
                             <div className="pt-8">
                                 <h4 className="font-medium mb-4"> Connect With Me</h4>
                                 <div className="flex space-x-4 justify-center">
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.linkedin.com/in/jihad-alibrahimm-a2712a195/" target="_blank">
                                         <Linkedin/>
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.facebook.com/profile.php?id=100092865439805" target="_blank">
                                         <Facebook/>
                                     </a>
                                 </div>
@@ -77,7 +77,19 @@ export const ContactSection = () => {
                     </div>
                     <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6">Send a message</h3>
-                        <form className="space-y-6">
+                        <form 
+                            action="https://api.web3forms.com/submit"
+                            method="POST"
+                            className="space-y-6"
+                        >
+                            {/* Web3Forms Access Key */}
+                            <input 
+                                type="hidden" 
+                                name="access_key" 
+                                value="d0b2cc3c-b372-4098-9098-a2891e072240" 
+                            />
+
+                            {/* Name */}
                             <div>
                                 <label 
                                     htmlFor="name"
@@ -89,42 +101,49 @@ export const ContactSection = () => {
                                     type="text" 
                                     name="name"
                                     id="name"
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outlined-hidden focus:ring-2 focus:ring-primary"
+                                    required
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                                     placeholder="Jihad Alibrahim..."
                                 />
                             </div>
+
+                            {/* Email */}
                             <div>
                                 <label 
                                     htmlFor="email"
                                     className="block text-sm font-medium mb-2"
                                 >
-                                    {" "}
                                     Your Email
                                 </label>
                                 <input 
                                     type="email" 
                                     name="email"
                                     id="email"
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outlined-hidden focus:ring-2 focus:ring-primary"
+                                    required
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                                     placeholder="jihadalibrahimm@gmail.com..."
                                 />
                             </div>
+
+                            {/* Message */}
                             <div>
                                 <label 
                                     htmlFor="message"
                                     className="block text-sm font-medium mb-2"
-                                >   
-                                    {" "}
+                                >
                                     Your Message
                                 </label>
                                 <textarea 
                                     id="message"
                                     name="message"
+                                    rows="5"
                                     required
-                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outlined-hidden focus:ring-2 focus:ring-primary resize-none"
-                                    placeholder="Hello,I'd like to talk about..."
+                                    className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                                    placeholder="Hello, I'd like to talk about..."
                                 />
                             </div>
+
+                            {/* Submit Button */}
                             <button 
                                 type="submit"
                                 className={cn(
@@ -135,6 +154,7 @@ export const ContactSection = () => {
                                 <Send size={16}/>
                             </button>
                         </form>
+
                     </div>
                 </div>
             </div>

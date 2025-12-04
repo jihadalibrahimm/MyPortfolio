@@ -2,31 +2,31 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react"
 
 const projects = [
     {
-        id:1,
-        title:"saas Landing Pahe",
-        description:"A beautiful landing page",
-        image:"projects/Creative.png",
-        tags:["React","Tailwind","Supabase"],
-        demoUrl:"#",
-        githubUrl:"#",
+    id:1,
+    title:"Creative Agency Website",
+    description:"A modern and responsive website for a digital agency showcasing services, portfolio, and company values with smooth animations.",
+    image:"projects/Creative.png",
+    tags:["HTML","CSS","JavaScript"],
+    demoUrl:"https://grand-meerkat-cc92b1.netlify.app",
+    githubUrl:"https://github.com/jihadalibrahimm/CreativeAgency",
     },
     {
         id:2,
-        title:"saas Landing Pahe",
-        description:"A beautiful landing page",
+        title:"Restaurant Product Showcase",
+        description:"A visually appealing website to display restaurant dishes with modern animations, smooth transitions, and clean UI.",
         image:"projects/FoodOrdering.png",
-        tags:["React","Tailwind","Supabase"],
-        demoUrl:"#",
-        githubUrl:"#",
+        tags:["HTML","CSS","JavaScript"],
+        demoUrl:"https://jihadalibrahimm.github.io/Food-Ordering/",
+        githubUrl:"https://github.com/jihadalibrahimm/Food-Ordering",
     },
     {
         id:3,
-        title:"saas Landing Pahe",
-        description:"A beautiful landing page",
+        title:"Criativo Website",
+        description:"A creative multi-section website featuring hero, services, about, portfolio, testimonials, and contact sections.",
         image:"projects/Creativo.png",
-        tags:["React","Tailwind","Supabase"],
-        demoUrl:"#",
-        githubUrl:"#",
+        tags:["HTML","CSS","JavaScript"],
+        demoUrl:"https://jihadalibrahimm.github.io/Creativo/",
+        githubUrl:"https://github.com/jihadalibrahimm/Creativo",
     },
 ]
 export const ProjectsSection = () => {
@@ -43,6 +43,7 @@ export const ProjectsSection = () => {
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                     Here are some of my recent projects. Each project was carefuly created with attention to detail, performance, and user experience.
                 </p>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project,key) => (
                         <div 
@@ -81,15 +82,15 @@ export const ProjectsSection = () => {
                                         <a 
                                             href={project.demoUrl} 
                                             target="_blank"
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                            <ExternalLink size={20}/>
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300 animate-fade-in-delay-4">
+                                            <ExternalLink size={30}/>
                                         </a>
                                         <a 
                                             href={project.githubUrl}
                                             target="_blank"
-                                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300 animate-fade-in-delay-4"
                                         >
-                                            <Github size={20}/>
+                                            <Github size={30}/>
                                         </a>
                                     </div>
                                 </div>
@@ -102,7 +103,7 @@ export const ProjectsSection = () => {
                         href="https://github.com/jihadalibrahimm"
                         target="_blank"
                         className="cosmic-button w-fit flex items-center mx-auto">
-                        Check My Github <ArrowRight size={16}/>
+                        Check My Github <ArrowRight size={20}/>
                     </a>
                 </div>
             </div>

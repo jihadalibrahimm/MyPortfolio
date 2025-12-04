@@ -9,7 +9,6 @@ export const HeroSection = () => {
             <div className="container max-w-7xl mx-auto z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
 
-                    {/* النص عاليسار */}
                     <div className="text-center md:text-left space-y-8">
                         <h1 className="text-4xl md:text-6xl font-bold tracking-tight"> 
                             <span className="opacity-0 animate-fade-in">Hi, I'm</span>  
