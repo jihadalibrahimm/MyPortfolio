@@ -14,7 +14,7 @@ export const HeroSection = () => {
                             className="text-primary opacity-0 animate-fade-in-delay-1"
                         >
                             {" "}
-                            Test
+                            Jihad
                         </span> 
                         <span 
                             className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"
