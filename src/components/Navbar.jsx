@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { cn } from "../lib/utils"
 import { X , Menu } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
     {name:"Home", href:"#hero"},
@@ -21,12 +22,14 @@ export const Navbar = () => {
         window.addEventListener("scroll",handleScroll);
         return () => window.removeEventListener("scroll",handleScroll);
     },[])
+
     return(
         <nav className={cn(
             "fixed w-full z-40 transition-all duration-300",
             isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-x5":"py-5" 
         )}>
             <div className="container flex items-center justify-between">
+
                 <a 
                     className="text-xl font-bold text-primary flex items-center"
                     href="#hero"    
@@ -37,9 +40,13 @@ export const Navbar = () => {
                     </span>
                 </a>
 
+                {/* theme button (center between 850px — 1024px) */}
+                <div className="flex justify-center items-center w-full lg:hidden">
+                    <ThemeToggle mobile={true}/>
+                </div>
+
                 {/* Desktop nav */}
-                <div 
-                    className="hidden md:flex space-x-8">
+                <div className="hidden lg:flex space-x-8">
                     {navItems.map((item,key) => (
                         <a 
                             key={key}
@@ -54,26 +61,25 @@ export const Navbar = () => {
                 {/* Mobile nav */}
                 <button 
                     onClick={() => setIsMenuOpen((prev) => !prev)} 
-                    className="md:hidden p-2 text-foreground z-50"
-                    aria-label={isMenuOpen?"close Menu":"Open Menu"}
+                    className="lg:hidden p-2 text-foreground z-50"
                 > 
                     {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button> 
+
                 <div className={cn(
                     "fixed inset-0 bg-background/95 backdruop-blur-md z-40 flex flex-col items-center justify-center",
-                    "transition-all duration-300 md:hidden",
+                    "transition-all duration-300 lg:hidden",
                     isMenuOpen 
                         ? "opacity-100 pointer-events-auto"
                         : "opacity-0 pointer-events-none"
-                    )}>
-                    <div 
-                        className="flex flex-col space-y-8 text-xl">
+                )}>
+                    <div className="flex flex-col space-y-8 text-xl">
                         {navItems.map((item,key) => (
                             <a 
                                 key={key}
                                 href={item.href}
                                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                onClick={() => setIsMenuOpen(true)}
+                                onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.name}
                             </a>
