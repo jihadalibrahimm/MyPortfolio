@@ -50,19 +50,25 @@ export const HeroSection = () => {
 
                     {/* RIGHT */}
                     <div className="flex justify-center md:justify-end opacity-0 animate-fade-in-delay-4">
-                        <div className="bg-white/70 dark:bg-transparent rounded-2xl">
-                            <img 
-                                src="projects/personal-bgRemoved.png"
-                                alt="Jihad photo"
-                                className="
+                        <img 
+                            src="/projects/personal-bgRemoved.png"
+                            alt="Jihad photo"
+                            className="
                                 w-[240px] 
                                 sm:w-[300px] 
                                 md:w-[350px] 
                                 lg:w-[380px] 
                                 rounded-xl 
-                                animate-float"
-                            />
-                        </div>
+                                animate-float
+                                bg-transparent
+                            "
+                            style={{
+                                background: "transparent",
+                                WebkitMaskImage: "url(/projects/personal-bgRemoved.png)",
+                                maskImage: "url(/projects/personal-bgRemoved.png)",
+                                maskSize: "contain",
+                            }}
+                        />
                     </div>
                 </div>
             </div>
