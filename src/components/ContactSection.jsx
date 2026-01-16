@@ -1,4 +1,6 @@
 import { Facebook, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
+import { SiWhatsapp } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import { cn } from "../lib/utils"
 
 export const ContactSection = () => {
