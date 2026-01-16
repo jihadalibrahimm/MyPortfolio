@@ -1,6 +1,4 @@
 import { Facebook, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react"
-import { SiWhatsapp } from "react-icons/si";
-import { MdEmail } from "react-icons/md";
 import { cn } from "../lib/utils"
 
 export const ContactSection = () => {
@@ -64,24 +62,7 @@ export const ContactSection = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="pt-8">
-                              <h4 className="font-medium mb-4">Connect With Me</h4>
-                              <div className="flex space-x-6 justify-center text-2xl"> {/* كبرنا المسافة والأيقونات */}
-                                <a href="https://www.linkedin.com/in/jihad-alibrahimm-a2712a195/" target="_blank" rel="noopener noreferrer">
-                                  <Linkedin />
-                                </a>
-                                <a href="https://www.facebook.com/profile.php?id=100092865439805" target="_blank" rel="noopener noreferrer">
-                                  <Facebook />
-                                </a>
-                                <a href="https://wa.me/905349279249" target="_blank" rel="noopener noreferrer">
-                                  <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-8 h-8"/> {/* أو أيقونة React إذا عندك */}
-                                </a>
-                                <a href="mailto:jihadalibrahimm@gmail.com" target="_blank" rel="noopener noreferrer">
-                                  <img src="/icons/mail.svg" alt="Email" className="w-8 h-8"/>
-                                </a>
-                              </div>
-                            </div>
-
+                            
                         </div> 
                     </div>
                     <div className="bg-card p-8 rounded-lg shadow-xs">
