@@ -51,7 +51,7 @@ export const HeroSection = () => {
                     {/* RIGHT */}
                     <div className="flex justify-center md:justify-end opacity-0 animate-fade-in-delay-4">
                         <img 
-                            src="/projects/personal-bgRemoved.png"
+                            src="/projects/personal-bgRemoved.webp"
                             alt="Jihad photo"
                             className="
                                 w-[240px] 
@@ -64,8 +64,8 @@ export const HeroSection = () => {
                             "
                             style={{
                                 background: "transparent",
-                                WebkitMaskImage: "url(/projects/personal-bgRemoved.png)",
-                                maskImage: "url(/projects/personal-bgRemoved.png)",
+                                WebkitMaskImage: "url(/projects/personal-bgRemoved.webp)",
+                                maskImage: "url(/projects/personal-bgRemoved.webp)",
                                 maskSize: "contain",
                             }}
                         />

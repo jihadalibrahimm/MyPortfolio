@@ -2,16 +2,25 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react"
 
 const projects = [
     {
-    id:1,
-    title:"Creative Agency Website",
-    description:"A modern and responsive website for a digital agency showcasing services, portfolio, and company values with smooth animations.",
-    image:"projects/Creative.png",
-    tags:["HTML","CSS","JavaScript"],
-    demoUrl:"https://grand-meerkat-cc92b1.netlify.app",
-    githubUrl:"https://github.com/jihadalibrahimm/CreativeAgency",
+        id:1,
+        title:"Creative Agency Website",
+        description:"A modern and responsive website for a digital agency showcasing services, portfolio, and company values with smooth animations.",
+        image:"projects/Creative.png",
+        tags:["Wordpress"],
+        demoUrl:"https://grand-meerkat-cc92b1.netlify.app",
+        githubUrl:"https://github.com/jihadalibrahimm/CreativeAgency",
     },
     {
-        id:2,
+        id: 2,
+        title: "POS Management System",
+        description: "A full-featured web-based POS system designed for real-world business operations. It provides an admin-focused dashboard with sales tracking, revenue analytics, project management, and real-time insights through interactive charts and KPIs.",
+        image: "projects/POS.png",
+        tags: ["React", "Vite", "Tailwind", "REST API", "Dashboard"],
+        demoUrl: "#", // 
+        githubUrl: "https://github.com/jihadalibrahimm/pos", 
+    },
+    {
+        id:3,
         title:"Restaurant Product Showcase",
         description:"A visually appealing website to display restaurant dishes with modern animations, smooth transitions, and clean UI.",
         image:"projects/FoodOrdering.png",
@@ -19,15 +28,7 @@ const projects = [
         demoUrl:"https://jihadalibrahimm.github.io/Food-Ordering/",
         githubUrl:"https://github.com/jihadalibrahimm/Food-Ordering",
     },
-    {
-        id:3,
-        title:"Criativo Website",
-        description:"A creative multi-section website featuring hero, services, about, portfolio, testimonials, and contact sections.",
-        image:"projects/Creativo.png",
-        tags:["HTML","CSS","JavaScript"],
-        demoUrl:"https://jihadalibrahimm.github.io/Creativo/",
-        githubUrl:"https://github.com/jihadalibrahimm/Creativo",
-    },
+    
 ]
 export const ProjectsSection = () => {
     return(
