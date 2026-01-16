@@ -16,7 +16,7 @@ const projects = [
         description: "A full-featured web-based POS system designed for real-world business operations. It provides an admin-focused dashboard with sales tracking, revenue analytics, project management, and real-time insights through interactive charts and KPIs.",
         image: "projects/POS.png",
         tags: ["React", "Vite", "Tailwind", "REST API", "Dashboard"],
-        demoUrl: "#", // 
+        demoUrl: "#", 
         githubUrl: "https://github.com/jihadalibrahimm/pos", 
     },
     {

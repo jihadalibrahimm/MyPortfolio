@@ -56,6 +56,7 @@ export const ContactSection = () => {
                                 <div className="a">
                                     <h4 className="font-medium"> Address</h4>
                                     <a 
+<<<<<<< HEAD
                                         className="text-muted-foreground hover:text-primary transition-colors"
                                     >
                                         Turkey, Sanliurfa
@@ -132,7 +133,6 @@ export const ContactSection = () => {
                                     placeholder="Hello, I'd like to talk about..."
                                 />
                             </div>
-
                             {/* Submit Button */}
                             <button 
                                 type="submit"
@@ -150,3 +150,6 @@ export const ContactSection = () => {
         </section>
     )
 }
+=======
+                                        className="text-mugit
+>>>>>>> 9240674 (add update)
