@@ -1,36 +1,29 @@
-# My Portfolio – React + Vite
+# 👤 Kişisel Portfolyo – React + Vite
 
-A personal portfolio built with **React**, **Vite**, and modern UI styling.  
-The project showcases my work, skills, and contact form.
-
----
-
-## 🚀 Live Demo
-👉 https://myportfolio-ooub.onrender.com/
+**React** ve **Vite** kullanılarak geliştirilmiş, modern ve şık tasarıma sahip kişisel portfolyo sitesi. Bu proje; çalışmalarımı, yeteneklerimi ve iletişim bilgilerimi profesyonel bir şekilde sergiler.
 
 ---
 
-## ✨ Features
-- Modern responsive UI
-- Dark/Light mode toggle
-- Projects section
-- Contact form using Web3Forms
-- Fast performance (Vite + React)
-- Smooth animations
+## 🚀 Canlı Demo
+Uygulamayı buradan inceleyebilirsiniz:  
+👉 [**Kişisel Portfolyo Canlı İzle**](https://myportfolio-ooub.onrender.com/)
 
 ---
 
-## 🛠 Technologies Used
-- React
-- Vite
-- TailwindCSS
-- Lucide Icons
+## ✨ Özellikler
+- **Modern ve Duyarlı (Responsive) Tasarım:** Tüm cihazlarda mükemmel görünüm.
+- **Koyu/Aydınlık Tema:** Kullanıcı dostu Dark/Light mode geçişi.
+- **Projeler Bölümü:** Geliştirilen çalışmaların detaylı listesi.
+- **Web3Forms Entegrasyonu:** Backend gerektirmeden çalışan aktif iletişim formu.
+- **Yüksek Performans:** Vite ve React ile hızlı yükleme süreleri.
+- **Akıcı Animasyonlar:** Modern ve estetik geçiş efektleri.
 
 ---
 
-## 📦 Installation
+## 🛠️ Kullanılan Teknolojiler
+* **Framework:** React.js
+* **Build Tool:** Vite
+* **Styling:** TailwindCSS
+* **Icons:** Lucide Icons
 
-```bash
-git clone https://github.com/yourusername/MyPortfolio.git
-cd MyPortfolio
-npm install
+---
