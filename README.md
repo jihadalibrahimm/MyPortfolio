@@ -6,7 +6,7 @@
 
 ## 🚀 Canlı Demo
 Uygulamayı buradan inceleyebilirsiniz:  
-👉 [**Kişisel Portfolyo Canlı İzle**](https://myportfolio-ooub.onrender.com/)
+👉 [** Portfolyo Canlı İzle**](https://myportfolio-ooub.onrender.com/)
 
 ---
 
